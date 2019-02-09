@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_centerHorizontal="true">
+        <EditText
+            android:id="@+id/d_id"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:visibility="gone"
+            android:hint="id"/>
+        <EditText
+            android:id="@+id/d_cardNumber"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:hint="Card Number"/>
+        <EditText
+            android:id="@+id/d_expirationDate"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:hint="Expiration Date"/>
+        <EditText
+            android:id="@+id/d_securityCode"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:hint="Security Code"/>
+        <EditText
+            android:id="@+id/d_payementNetwork"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:hint="Payement Network"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@id/layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true">
+        <Button
+            android:id="@+id/d_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"/>
+
+        <Button
+            android:id="@+id/d_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update" />
+    </LinearLayout>
+
+</RelativeLayout>
